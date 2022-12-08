@@ -105,3 +105,6 @@ deploy:
   type: git
   repo: 'git@github.com:dreamice13/dreamice13.github.io.git'
   branch: 'gh-pages'
+  name: Dreamice
+  email: dreamice13@foxmail.com
+
