@@ -1,7 +1,9 @@
 ---
 title: hexo自动部署
 date: 2022-12-12 20:37:26
-tags: hexo博客
+categories: aa
+tags: [Hexo, keywords, 博客SEO, blog]
+keywords: Hexo, keywords, 博客SEO, blog
 ---
 
 ## 生成及部署

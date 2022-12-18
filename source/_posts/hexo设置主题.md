@@ -1,7 +1,10 @@
 ---
 title: hexo设置主题
 date: 2022-12-10 19:54:09
-tags: hexo博客
+tags: 
+- hexo博客 
+- zhong
+categories: bb
 ---
 
 # 基础使用
