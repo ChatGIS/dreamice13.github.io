@@ -19,3 +19,7 @@ git clone git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo
 在_config.yml文件中，找到theme选项，将选项设置为：`theme: vexo`
 设置之后，即可使用该主题的样式；
 
+# 进阶使用
+## 1、部署样式错乱
+删除public文件夹，使用命令`hexo g`重新生成。
+
