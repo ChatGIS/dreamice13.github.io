@@ -205,6 +205,14 @@
 <h2 id="2-下载主题"><a href="#2-下载主题" class="headerlink" title="2. 下载主题"></a>2. 下载主题</h2><p>通过命令下载主题，</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo</span><br></pre></td></tr></table></figure>
 <h2 id="3-设置主题"><a href="#3-设置主题" class="headerlink" title="3. 设置主题"></a>3. 设置主题</h2><p>在_config.yml文件中，找到theme选项，将选项设置为：<code>theme: vexo</code><br>设置之后，即可使用该主题的样式；</p>
+<h1 id="进阶使用"><a href="#进阶使用" class="headerlink" title="进阶使用"></a>进阶使用</h1><p>vexo主题中有一些作者信息、图片，为了改成自己的信息并同步github，需要fork对应的主题。</p>
+<h2 id="1、fork主题"><a href="#1、fork主题" class="headerlink" title="1、fork主题"></a>1、fork主题</h2><p>fork主题</p>
+<h2 id="2、下载主题"><a href="#2、下载主题" class="headerlink" title="2、下载主题"></a>2、下载主题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo</span><br></pre></td></tr></table></figure>
+<h2 id="3、修改提交"><a href="#3、修改提交" class="headerlink" title="3、修改提交"></a>3、修改提交</h2><p>在themes&#x2F;vexo文件夹下进行git提交、上传</p>
+<h1 id="样式问题"><a href="#样式问题" class="headerlink" title="样式问题"></a>样式问题</h1><h2 id="1、部署样式错乱"><a href="#1、部署样式错乱" class="headerlink" title="1、部署样式错乱"></a>1、部署样式错乱</h2><p>删除public文件夹，使用命令<code>hexo g</code>重新生成。</p>
+<blockquote>
+<p>使用<code>hexo clean</code>命令清除缓存文件 (db.json) 和已生成的静态文件 (public)。<code>hexo c</code>不是其简写形式，不能使用。</p>
+</blockquote>
 </section>
     <!-- Tags START -->
     
@@ -288,7 +296,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8"><span class="toc-nav-text">基础使用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">1. 选择主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">2. 下载主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">3. 设置主题</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8"><span class="toc-nav-text">基础使用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">1. 选择主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">2. 下载主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">3. 设置主题</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8"><span class="toc-nav-text">进阶使用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1%E3%80%81fork%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">1、fork主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2%E3%80%81%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98"><span class="toc-nav-text">2、下载主题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3%E3%80%81%E4%BF%AE%E6%94%B9%E6%8F%90%E4%BA%A4"><span class="toc-nav-text">3、修改提交</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98"><span class="toc-nav-text">样式问题</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1"><span class="toc-nav-text">1、部署样式错乱</span></a></li></ol></li></ol>
     
   </div>
 </aside>
