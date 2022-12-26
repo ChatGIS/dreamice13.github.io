@@ -916,6 +916,23 @@ h2.article-head {
 .author .share-icons .icon-douban {
   color: #00b51d;
 }
+.author .share-icons .icon-custom13 {
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 0 0.4em;
+  vertical-align: middle;
+}
+.author .share-icons .img-custom13 {
+  margin-top: 0.5em;
+}
+.author .share-icons .icon-cnblogs-custom13 {
+  background-color: #fff;
+}
+.author .share-icons .icon-csdn-custom13 {
+  background-color: #fc5531;
+}
 .project-app {
   max-width: 1020px;
   min-width: 300px;
