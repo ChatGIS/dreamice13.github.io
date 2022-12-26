@@ -20,6 +20,18 @@ git clone git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo
 设置之后，即可使用该主题的样式；
 
 # 进阶使用
+vexo主题中有一些作者信息、图片，为了改成自己的信息并同步github，需要fork对应的主题。
+## 1、fork主题
+fork主题
+## 2、下载主题
+```bash
+git clone git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo
+```
+## 3、修改提交
+在themes/vexo文件夹下进行git提交、上传
+
+# 样式问题
 ## 1、部署样式错乱
 删除public文件夹，使用命令`hexo g`重新生成。
+> 使用`hexo clean`命令清除缓存文件 (db.json) 和已生成的静态文件 (public)。`hexo c`不是其简写形式，不能使用。
 
