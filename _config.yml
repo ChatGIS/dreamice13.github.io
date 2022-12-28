@@ -109,3 +109,8 @@ deploy:
   name: Dreamice
   email: dreamice13@foxmail.com
 
+# 本地搜索功能
+search:
+  path: search.xml
+  field: post
+
