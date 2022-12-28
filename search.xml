@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo设置标签及分类</title>
+      <link href="/2022/12/19/hexo%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/12/19/hexo%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<p>以下方式仅限于vexo主题下使用；</p><h1 id="设置标签"><a href="#设置标签" class="headerlink" title="设置标签"></a>设置标签</h1><p>标签设置有两种方式；</p><p>1、数组方式</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [标签1, 标签2]</span><br></pre></td></tr></table></figure><p>相对方法2，这种方式写起来比较简单、直观；</p><p>2、短横线方式</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line">- 标签1 </span><br><span class="line">- 标签2</span><br></pre></td></tr></table></figure><blockquote><p>注意：该方式-后要有空格；</p></blockquote><h1 id="设置分类"><a href="#设置分类" class="headerlink" title="设置分类"></a>设置分类</h1><p>分类设置方式如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: 分类名</span><br></pre></td></tr></table></figure><blockquote><p>注意：每篇文章必须包括categories，且分类名必须不为空；也就是说每篇文章必须分类，否则点击Series会报错。当然，这个仅实验于vexo主题。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo自动部署</title>
+      <link href="/2022/12/12/hexo%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/"/>
+      <url>/2022/12/12/hexo%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="生成及部署"><a href="#生成及部署" class="headerlink" title="生成及部署"></a>生成及部署</h2><p>根据官网说明，执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure><p>简写格式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo设置主题</title>
+      <link href="/2022/12/10/hexo%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98/"/>
+      <url>/2022/12/10/hexo%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h1><h2 id="1-选择主题"><a href="#1-选择主题" class="headerlink" title="1. 选择主题"></a>1. 选择主题</h2><p>截止本文编写时，hexo官网提供了372个主题，用户可以根据自己喜好选择主题；<br>个人当前选择主题是yanm1ng&#x2F;hexo-theme-vexo；</p><h2 id="2-下载主题"><a href="#2-下载主题" class="headerlink" title="2. 下载主题"></a>2. 下载主题</h2><p>通过命令下载主题，</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo</span><br></pre></td></tr></table></figure><h2 id="3-设置主题"><a href="#3-设置主题" class="headerlink" title="3. 设置主题"></a>3. 设置主题</h2><p>在_config.yml文件中，找到theme选项，将选项设置为：<code>theme: vexo</code><br>设置之后，即可使用该主题的样式；</p><h1 id="进阶使用"><a href="#进阶使用" class="headerlink" title="进阶使用"></a>进阶使用</h1><p>vexo主题中有一些作者信息、图片，为了改成自己的信息并同步github，需要fork对应的主题。</p><h2 id="1、fork主题"><a href="#1、fork主题" class="headerlink" title="1、fork主题"></a>1、fork主题</h2><p>fork主题</p><h2 id="2、下载主题"><a href="#2、下载主题" class="headerlink" title="2、下载主题"></a>2、下载主题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:dreamice13/hexo-theme-vexo.git themes/vexo</span><br></pre></td></tr></table></figure><h2 id="3、修改提交"><a href="#3、修改提交" class="headerlink" title="3、修改提交"></a>3、修改提交</h2><p>在themes&#x2F;vexo文件夹下进行git提交、上传</p><h1 id="样式问题"><a href="#样式问题" class="headerlink" title="样式问题"></a>样式问题</h1><h2 id="1、部署样式错乱"><a href="#1、部署样式错乱" class="headerlink" title="1、部署样式错乱"></a>1、部署样式错乱</h2><p>删除public文件夹，使用命令<code>hexo g</code>重新生成。</p><blockquote><p>使用<code>hexo clean</code>命令清除缓存文件 (db.json) 和已生成的静态文件 (public)。<code>hexo c</code>不是其简写形式，不能使用。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo基础使用（默认生成）</title>
+      <link href="/2022/12/08/hello-world/"/>
+      <url>/2022/12/08/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
