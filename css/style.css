@@ -920,18 +920,27 @@ h2.article-head {
   width: 2.2em;
   height: 2.2em;
   border-radius: 50%;
-  border: 1px solid #000;
   margin: 0 0.4em;
   vertical-align: middle;
 }
 .author .share-icons .img-custom13 {
-  margin-top: 0.5em;
+  margin-top: 0.45em;
 }
-.author .share-icons .icon-cnblogs-custom13 {
+.author .share-icons .icon-cnblogs {
   background-color: #fff;
+  border: 1px solid #000;
 }
-.author .share-icons .icon-csdn-custom13 {
+.author .share-icons .icon-csdn {
   background-color: #fc5531;
+}
+.author .share-icons .icon-sg {
+  background-color: #009a61;
+}
+.author .share-icons .icon-cnblogs {
+  border: 1px solid #000;
+}
+.author .share-icons .icon-juejin {
+  border: 2px solid #1981ff;
 }
 .project-app {
   max-width: 1020px;
