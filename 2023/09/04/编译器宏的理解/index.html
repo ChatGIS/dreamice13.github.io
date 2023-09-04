@@ -10,7 +10,7 @@
   
   <title>
     
-      Hexo基础使用（默认生成） | Dreamice13′s Blog
+      编译器宏的理解 | Dreamice13′s Blog
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -192,8 +192,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Hexo基础使用（默认生成）</h2>
-  <p class="post-date">2022-12-08</p>
+  <h2>编译器宏的理解</h2>
+  <p class="post-date">2023-09-04</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
@@ -201,21 +201,30 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <section class="markdown-content"><h2 id="官网说明"><a href="#官网说明" class="headerlink" title="官网说明"></a>官网说明</h2><blockquote>
+<p>编译器宏是一种特殊的代码，由编译器处理并转换为其他东西。它们实际上是一种更巧妙的<strong>字符串替换形式</strong>。<br>Vue 的单文件组件编译器支持各种宏，例如 defineProps()、defineEmits() 和 defineExpose()。这些宏有意设计得<strong>像是</strong>普通的 JavaScript 函数，以便它们可以利用 JavaScript &#x2F; TypeScript 中的相同解析器和类型推断工具。然而，它们不是在浏览器中运行的实际函数。这些特殊字符串会被编译器检测到并替换为实际真正运行的 JavaScript 代码。<br>宏在使用上有一些不适用于普通 JavaScript 代码的限制。例如，你可能认为 const dp &#x3D; defineProps 会为 defineProps 创建一个别名，但实际上它会导致错误。相同的限制也存在于传入 defineProps() 的值，因为“参数”必须由编译器处理，而不是在运行时。<br>官方说明<a target="_blank" rel="noopener" href="https://cn.vuejs.org/glossary/#compiler-macro">https://cn.vuejs.org/glossary/#compiler-macro</a></p>
+</blockquote>
+<h2 id="个人理解"><a href="#个人理解" class="headerlink" title="个人理解"></a>个人理解</h2><ol>
+<li>编辑器宏不是JavaScript函数，只是形似；</li>
+<li>编辑器宏实际是字符串替换；</li>
+<li>编辑器宏正因为是字符串替换，所以是在编译时执行；因为不是JS函数，所以不在运行时执行；</li>
+<li>宏（英语：Macro），是一种批量处理的称谓。计算机科学里的宏是一种抽象（Abstraction），它根据一系列预定义的规则替换一定的文本模式。解释器或编译器在遇到宏时会自动进行这一模式替换。– 百科</li>
+</ol>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#术语" >
+    <span class="tag-code">术语</span>
+  </a>
+
+  <a href="/tags#Vue" >
+    <span class="tag-code">Vue</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- NAV START -->
@@ -223,13 +232,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-    
-      <a class="nav-right" href="/2022/12/10/hexo%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98/">
+      <a class="nav-left" href="/2023/01/12/Postman%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD%E7%BC%96%E5%86%99%E5%8F%8A%E4%BD%BF%E7%94%A8/">
+        <span class="nav-arrow">← </span>
         
-          Hexo设置主题
+          Postman测试功能编写及使用
         
-        <span class="nav-arrow"> →</span>
       </a>
+    
     
   </div>
 
@@ -281,7 +290,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%98%E7%BD%91%E8%AF%B4%E6%98%8E"><span class="toc-nav-text">官网说明</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%AA%E4%BA%BA%E7%90%86%E8%A7%A3"><span class="toc-nav-text">个人理解</span></a></li></ol>
     
   </div>
 </aside>
@@ -291,7 +300,7 @@
 
 <script>
   (function () {
-    var url = 'https://dreamice13.github.io/2022/12/08/hello-world/';
+    var url = 'https://dreamice13.github.io/2023/09/04/编译器宏的理解/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
