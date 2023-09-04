@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo安装以及预览</title>
+      <link href="/2023/09/04/hexo%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
+      <url>/2023/09/04/hexo%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%A2%84%E8%A7%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h2><p>当使用<code>hexo XX</code>等命令时，显示找不到hexo；需要全局安装hexo</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>编译器宏的理解</title>
       <link href="/2023/09/04/%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%8F%E7%9A%84%E7%90%86%E8%A7%A3/"/>
       <url>/2023/09/04/%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%8F%E7%9A%84%E7%90%86%E8%A7%A3/</url>
