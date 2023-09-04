@@ -1,8 +1,15 @@
+<!--
+ * @Author: Dreamice dreamice13@foxmail.com
+ * @Date: 2022-12-19 20:26:24
+ * @LastEditors: Dreamice dreamice13@foxmail.com
+ * @LastEditTime: 2023-09-04 23:44:21
+ * @FilePath: \dreamice13.github.io\source\_posts\hexo标签及分类.md
+ * @Description: 
+-->
 ---
 title: Hexo设置标签及分类
 date: 2022-12-19 20:26:24
 tags: [hexo]
-type: "categories"
 categories: Hexo
 ---
 
